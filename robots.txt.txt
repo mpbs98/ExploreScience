@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mpbs98.github.io/ExploreScience/sitemap.xml

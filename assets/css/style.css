@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
+/* Colors override */
+.bg-dark {
+    background-color: #0d1117 !important;
+}
+
+.bg-secondary {
+    background-color: #161b22 !important;
+}
+
+.text-primary {
+    color: #58a6ff !important;
+}
+
+.btn-primary {
+    background-color: #58a6ff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3fb950;
+}
+
+img {
+    width: 18rem;
+    height: 18rem;
+}
+
+/*carousel img fit*/
+.carousel img {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+/* font */
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body,
+p,
+li {
+    font-family: 'Inter', sans-serif;
+}
+
+/* bg vektor */
+body {
+    background: url('../img/abstract-black-background.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: #c9d1d9;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 0;
+}
+
+/* overlay */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: inherit;
+    filter: blur(0.75px) brightness(0.35);
+    z-index: -1;
+}
+
+
+
+footer {
+    background-color: #161b22;
+    color: #c9d1d9;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #58a6ff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: #3fb950;
+}
+
+
+/* fade */
+.animate-fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.animate-fade-delay {
+    opacity: 0;
+    animation: fadeIn 2s forwards 1s;
+}
+
+/*gallery*/
+.gallery-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/*form*/
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.form-control,
+.form-select {
+    background-color: #3b3b3b;
+    border: none;
+    color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #444;
+    color: #fff;
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px #0d6efd;
+}
+
+label {
+    font-weight: 600;
+}
+
+.btn-primary {
+    border-radius: 10px;
+}
+
+/*about*/
+
+.about-card {
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    margin: auto;
+}
+
+.about-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0d6efd;
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.4);
+}
+
+.about-info h4 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*keyfr*/
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/*
+Background (primary dark): #0d1117 (tamna za kontrast)
+
+Secondary dark: #161b22 (za navbar, kartice)
+
+Accent 1 (cosmic blue): #58a6ff
+
+Accent 2 (neon green): #3fb950
+
+Accent 3 (orange/red): #f85149
+
+Neutral text: #c9d1d9
+*/
